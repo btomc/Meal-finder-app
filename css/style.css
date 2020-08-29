@@ -126,8 +126,92 @@ button:hover {
     border-radius: 6px;
 }
 
+.single-meal {
+    margin: 30px auto;
+    width: 70%;
+}
+
+.single-meal img {
+    width: 400px;
+    margin: 15px;
+    border: 4px #d1269b solid;
+    border-radius: 6px;
+}
+
+.single-meal-info {
+    margin: 20px;
+    padding: 10px;
+    border-top: 2px #d1269b dashed;
+    border-bottom: 2px #d1269b dashed;
+}
+
+.meal-details {
+    border: none;
+    border-radius: 5px;
+    background-color: #d1269b;
+    display: inline;
+    color: azure;
+    font-size-adjust: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+}
+
+.single-meal p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+hr {
+    background-color: #d1269b;
+    height: 3px;
+    border: none;
+    margin: 10px 0;
+}
+
+.single-meal ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.single-meal ul li {
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .meals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+    .meals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meal {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 @media (max-width: 500px) {
     input[type='text'] {
         width: 100%;
+    }
+
+    .meals {
+        grid-template-columns: 1fr;
+    }
+
+    .meal {
+        height: 300px;
+        width: 300px;
     }
 }
